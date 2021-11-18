@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scribel</title>
+  <meta charset="utf-8" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-size:13px; color: white">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-peach">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img width="50%" src="./images/logo.png" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about_us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#transcribe">Transcribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#resources">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="warning" class="alert alert-warning" role="alert">
+    Speech Recognition Speech SDK not found (microsoft.cognitiveservices.speech.sdk.bundle.js missing).
+  </div>
+
+  <div class="container-fliud bg-light-peach">
+    <section>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 mt-5">Welcome to Scribel!</h1>
+        </div>
+        <div class="col-12 text-center">
+          <h1 class="display-6">Translate, Transcribe, Transform</h1>
+        </div>
+        <div class="col-8 offset-2 text-center mt-5">
+          <p class="lead">
+            Our website allows people to upload audio and in return get a transcript of the audio.
+            <br>
+            We also have a translation feature that will change the language this page is viewed in for people who speak other languages or want to learn new languages.
+            <br>
+            We decided to build this website to make technology more accessible for people hard of hearing and anyone who wants audio to help them pay attention during online classes or to transcribe virtual meetings.
+            <br>
+            We want to help individuals feel closer together through the magic of sounds and language!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <img src="./images/AboutPlant.png" class="img-fluid mx-auto d-block">
+<section>
+        <div class="col-12 text-center">
+            <div id="google_translate_element">
+            </div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+            }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
+            <p> <b>Individuals whose first language is not English are highly encouraged to translate this page into their preferred language! </b></p>
+        </div>
+</section>
+
+    <section id="about_us" class="bg-peach pb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 text-light mt-5">About Us</h1>
+        </div>
+      </div>
+      <div class="row m-4 row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hey, I'm Cassidy (she/her)!</h5>
+              <p class="card-text">I am a high school sophomore from Massachusetts. I enjoy working with Java, but I also have some experience with HTML/CSS. I love traveling the world and playing video games.</p>
+              <img src="./images/cassidy.png" class="card-img-top mx-auto d-block" width="50"  alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hi, my name is Betty (she/her)</h5>
+              <p class="card-text">I am a high school senior in Seattle. I like to code in HTML, CSS, JS, and Java. In my free time, I like to draw and watch anime!</p>
+              <img src="./images/betty.png" class="card-img-top mx-auto d-block" width="50"  alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hi, I'm Joie (she/her)</h5>
+              <p class="card-text">I am a high school student, and I live in Massachusetts. I have experience coding in Java and HTML/CSS. I love to watch cartoons, go on adventures, and play video games with friends!</p>
+              <img src="./images/joie.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hi, my name is Joanette(she/her)</h5>
+              <p class="card-text">I am a highschool student in Zimbabwe.I enjoy coding in HTML and Python.In my spare time I love to read, learn code and well dance.</p>
+              <img src="./images/joanette.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hi, I'm Sanya (she/her)!</h5>
+              <p class="card-text">I am a high school senior (senioritis is real) near Seattle. I enjoy Obv-C and Swift but can use HTML/JS. I enjoy trying new kinds of tea, reading, and wishing I could travel.</p>
+              <img src="./images/sanya.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hi, I'm Somya (she/her)!</h5>
+              <p class="card-text">I am a college student pursuing engineering in Information Technology and I live in Delhi. I like to code in Java, kotlin and HTML/CSS. I love to swim and watch movies with friends.</p>
+            <img src="./images/somya.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="transcribe" class="bg-light-peach pb-5">
+    <div id="content" style="display:none">
+      <div class="row">
+        <div class="col-12">
+          <img src="./images/TranslatePlant.png" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col-12 text-center">
+          <h1 class="display-1">Transcribe</h1>
+        </div>
+        <div class="col-12 text-center">
+          <p class="lead">
+            To transcribe a file, please select "Choose Files" and choose either a wav or mp3 audio file. Once you've done this, please click "Start recognition" to transcribe it. You may only select one input at a time. When you transcribe a different file, it will automatically reset the output box. Make sure you are picking the language the file is in or the transcription will be wrong.
+          </p>
+        </div>
+        <form>
+        <div class="col-8 offset-2">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="formFile" class="form-label">File to Recognize</label>
+                <input class="form-control" type="file" id="filePicker" accept=".wav">
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="langselect" class="form-label">Language</label>
+              <select id="langselect" class="form-select">
+                <option value="ar-BH">Arabic (Bahrain) modern standard</option>
+                <option value="ar-EG">Arabic (Egypt)</option>
+                <option value="ar-KW">Arabic (Kuwait)</option>
+                <option value="ar-QA">Arabic (Qatar)</option>
+                <option value="ar-SA">Arabic (Saudi Arabia)</option>
+                <option value="ar-SY">Arabic (Syria)</option>
+                <option value="ar-AE">Arabic (UAE)</option>
+                <option value="ca-ES">Catalan</option>
+                <option value="zh-HK">Chinese (Cantonese Traditional)</option>
+                <option value="zh-CN">Chinese (Mandarin simplified)</option>
+                <option value="zh-TW">Chinese (Taiwanese Mandarin)</option>
+                <option value="da-DK">Danish (Denmark)</option>
+                <option value="nl-NL">Dutch (Netherlands)</option>
+                <option value="en-AU">English (Australia)</option>
+                <option value="en-CA">English (Canada)</option>
+                <option value="en-IN">English (India)</option>
+                <option value="en-NZ">English (New Zealand)</option>
+                <option value="en-GB">English (United Kingdom)</option>
+                <option value="en-US" selected="selected">English (United States)</option>
+                <option value="fi-FI">Finnish (Finland)</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="fr-FR">French (France)</option>
+                <option value="de-DE">German (Germany)</option>
+                <option value="gu-IN">Gujarati (Indian)</option>
+                <option value="hi-IN">Hindi (India)</option>
+                <option value="it-IT">Italian (Italy)</option>
+                <option value="ja-JP">Japanese (Japan)</option>
+                <option value="ko-KR">Korean (Korea)</option>
+                <option value="mr-IN">Marathi (India)</option>
+                <option value="nb-NO">Norwegian (Bokmål) (Norway)</option>
+                <option value="pl-PL">Polish (Poland)</option>
+                <option value="pt-BR">Portuguese (Brazil)</option>
+                <option value="pt-PT">Portuguese (Portugal)</option>
+                <option value="ru-RU">Russian (Russia)</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="es-ES">Spanish (Spain)</option>
+                <option value="sv-SE">Swedish (Sweden)</option>
+                <option value="ta-IN">Tamil (India)</option>
+                <option value="te-IN">Telugu (India)</option>
+                <option value="th-TH">Thai (Thailand)</option>
+                <option value="tr-TR">Turkish (Turkey)</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-light mt-2" id="startRecognizeOnceAsyncButton">Start recognition</button>
+            </div>
+            <div class="col-12 mt-2">
+              <label for="langselect" class="form-label">Result</label>
+              <textarea class="form-control" id="phraseDiv" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </section>
+  
+ 
+  <!-- Speech SDK reference sdk. -->
+  <script src="microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+  <script src="./env.js"></script>
+
+  <!-- Speech SDK USAGE -->
+  <script src="./speech.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<section id="resources" class="bg-peach pb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 text-light mt-5">Resources</h1>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+          <p class="lead">
+            These tools have allowed our website to function at a great capacity for your use and enjoyment. We encourage you to try them out yourselves!
+          </p>
+        </div>   
+      <div class="row m-4 row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card profile-cards2">
+            <div class="card-body">
+              <h5 class="card-title text-center">Microsoft Azure</h5>
+              <p class="card-text">Azure for Students has allowed us to create the transcription service in an easy to use and straightforward way.</p>
+              <img src="./images/azure.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards2">
+            <div class="card-body">
+              <h5 class="card-title text-center">Google Cloud/Translate</h5>
+              <p class="card-text">Using Google Cloud/Translate, we have been able to provide you with an easy way to browse our website in your preffered language.</p>
+              <img src="./images/google.webp" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card profile-cards2">
+            <div class="card-body">
+              <h5 class="card-title text-center">Repl.it</h5>
+              <p class="card-text">This website was developed using the Repl code execution API. It has made the design elements beautiful for your viewing pleasure.</p>
+              <img src="./images/repl.png" class="card-img-top mx-auto d-block" width="50" alt="...">
+            </div>
+          </div>
+        </div>
+</section>
+  <img width="25%" height="10%" src="./images/transparentlogo.png" class="img-fluid mx-auto d-block" >
+</body>
+</html>

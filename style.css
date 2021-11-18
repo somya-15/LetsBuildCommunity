@@ -1,0 +1,56 @@
+.bg-peach {
+	background-color: #e8998d;
+}
+
+body {
+	background-color: rgb(238, 210, 204);
+}
+
+.bg-light-peach {
+	background-color: rgb(238, 210, 204);
+}
+
+.nav-link {
+	font-size: large;
+}
+
+.nav-item{
+  text-align: center;
+  float: center;
+  display: block;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+	width: 50%;
+}
+
+.profile-cards {
+	background-color: rgb(238, 210, 204);
+  height: 350px;
+}
+
+.profile-cards2 {
+	background-color: rgb(238, 210, 204);
+  height: 350px;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 100px;
+ 
+}
+
