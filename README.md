@@ -28,6 +28,6 @@ javascript,
 repl
 
 ### Project Demo Link: 
-https://devpost.com/software/scribel
+knobbyeachprogrammingtool.somyatomar.repl.co
 ### Contributors:
 Somya, Cassidy, Sanya, Joanette, Betty
